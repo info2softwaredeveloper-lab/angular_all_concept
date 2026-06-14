@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="top-line">
+        I am SignUp page!!
+    </div>
+    <div>
+        <form [formGroup]="form">
+            <div class="input-div">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Name" formControlName="name" />
+            </div>
+            <div class="input-div">
+                <label for="username">User Name:</label>
+                <input type="text" placeholder="UserName" formControlName="username"/>
+            </div>
+            <div class="input-div">
+                <label for="email">Email:</label>
+                <input type="text" placeholder="Email" formControlName="email"/>
+            </div>
+            <div class="input-div">
+                <label for="p">Password:</label>
+                <input type="text" placeholder="Password" formControlName="pwd"/>
+            </div>
+            <div class="input-div">
+                <label for="rr">Confirm Password:</label>
+                <input type="text" placeholder="Confirm Password" formControlName="c_pwd"/>
+            </div>
+        </form>
+
+        <div class="action-btn">
+            <button class="btn btn-success" (click)="signUp()">Sign UP</button>
+        </div>
+        
+    </div>
+    <div>
+        <h3>
+            I have an account
+        </h3>
+    </div>
+    <div>
+        <button class="btn btn-black" (click)="loginButton()">login</button>
+    </div>
+</div>

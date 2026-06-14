@@ -1,0 +1,12 @@
+<div class="top-strip">
+    Hey, Let's Introduce your self!!
+</div>
+<div class="parent">
+<div *ngIf="signUp; else login">
+    <app-signup (login)="loginEvent($event)"></app-signup>
+</div>
+<ng-template #login>
+    <app-login (signUp)="signUpEvent($event)"></app-login>
+</ng-template>
+</div>
+

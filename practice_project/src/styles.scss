@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+.parent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap:25px;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-dimm{
+    background: gray;
+    color: white
+}
+
+.btn-black{
+    background: black;
+    color: white;
+}
+
+.btn-primary{
+    background: blue;
+    color: white;
+}
+
+.btn-success{
+    background: darkgreen;
+    color: white;
+}
